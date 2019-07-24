@@ -22,12 +22,6 @@
       }
     },
     methods: {
-      deleteHandle(message) {
-        this.$store.commit('deleteUndone', message);
-      },
-      completeHandle(message) {
-        this.$store.commit('complete', message);
-      },
       editHandle(message) {
         this.editMessage = message;
         this.show = true;
@@ -40,11 +34,6 @@
         this.show=false;
       }
     },
-    computed: {
-      undoneList() {
-        return this.$store.state.undone
-      }
-    }
   }
 </script>
 

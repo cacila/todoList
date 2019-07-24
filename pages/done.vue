@@ -21,9 +21,6 @@
       }
     },
     methods: {
-      deleteHandle(message) {
-        this.$store.commit('deleteDone', message);
-      },
       appendHandle() {
         this.show = true;
       },
@@ -31,15 +28,7 @@
         this.editMessage = '';
         this.show=false;
       },
-      backHandle(message) {
-        this.$store.commit('back', message);
-      }
     },
-    computed: {
-      doneList() {
-        return this.$store.state.done
-      }
-    }
   }
 </script>
 
@@ -47,7 +36,8 @@
   .append {
     position: fixed;
     bottom: 30px;
-    right: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 50px;
     width: 50px;
     height: 50px;

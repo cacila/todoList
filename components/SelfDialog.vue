@@ -27,6 +27,9 @@
         }
         this.message = '';
         this.$emit('close');
+        if (this.$route.path === '/done') {
+          this.$router.push('/');
+        }
       },
     },
     watch: {
