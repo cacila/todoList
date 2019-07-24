@@ -1,0 +1,28 @@
+{
+  "name": "todoList",
+  "version": "1.0.0",
+  "description": "A record about your work",
+  "author": "Kacila",
+  "private": true,
+	"config": {
+	  "nuxt": {
+	    "host": "0.0.0.0",
+	    "port": "3000"
+	  }
+	},
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "postcss-pxtorem": "^4.0.1"
+  },
+  "devDependencies": {
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "nodemon": "^1.18.9"
+  }
+}
